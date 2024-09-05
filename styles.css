@@ -122,7 +122,7 @@ section input {
     /* Borda arredondada */
 }
 
-.result-search {
+.search-results {
     width: 60rem;
     height: 46vh;
     overflow-y: auto;
