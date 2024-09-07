@@ -5,7 +5,7 @@ let data = [
         description: "Discover paradise with your furry friend on the Blue Trail of Monsanto! Nestled in the heart of Lisbon's Monsanto Forest Park, this trail offers stunning views and endless nature. At around 7.7 km, it's perfect for longer adventures with your dog, exploring the area's amazing biodiversity.",
         link: "https://maps.app.goo.gl/UwipUz4JVsMsrmEr5",
         ImageUrl: "assets/images/trilho_monsanto.png",
-        tags: "pet dog free lisbon parque cão cao cachorro gratuito lisboa portugal",
+        tags: "pet dog free lisbon parque trilha trilho cão cao cachorro gratuito lisboa portugal",
     },
     {
         title: "Praia da Amoreira",

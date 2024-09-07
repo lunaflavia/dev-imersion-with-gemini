@@ -1,4 +1,7 @@
-function search() {
+function search(event) {
+    // Impedir o envio padrão do formulário
+    event.preventDefault();
+ 
     // Obtém a seção onde os resultados da busca serão exibidos
     let section = document.getElementById("search-results");
 

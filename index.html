@@ -12,19 +12,24 @@
 </head>
 
 <body>
-    <img class="brand-icon" src="assets/images/brand_icon.png" alt="Pawesome Place icon"/>
+    <a href="index.html">
+        <img class="brand-icon" src="assets/images/brand_icon.png" alt="Pawesome Place icon"/>
+    </a>
 
     <header>
         <h1>Pawesome Place</h1>
     </header>
+
     <main>
         <section class="search-input">
             <div class="input-container">
-                <input type="text" placeholder="Search for an awesome pet-friendly place" id="search-input">
+                <form onSubmit="search(event)" autocomplete="off">
+                    <input type="text" placeholder="Search for an awesome pet-friendly place" id="search-input">
 
-                <button onclick="search()">
-                    <i class="fa-solid fa-paw fa-2xl"></i>
-                </button>
+                    <button type="submit">
+                        <i class="fa-solid fa-paw fa-2xl"></i>
+                    </button>
+                </form>
             </div>
         </section>
         <!-- PLACES -->
