@@ -12,7 +12,6 @@ function search() {
 
     // Inicia uma string vazia para armazenar o conteúdo HTML dos resultados
     let content = "";
-    let tag = "";
 
     // Itera sobre cada resultado na lista de dados
     for (let result of data) {
@@ -20,13 +19,25 @@ function search() {
         const type = result.type.toLowerCase();
         const description = result.description.toLowerCase();
         const tags = result.tags.toLocaleLowerCase();
+        const imageUrl = result.ImageUrl;
 
         //Se o title includes searchInput
         if (title.includes(searchInput) || type.includes(searchInput) || description.includes(searchInput) || tags.includes(searchInput)) {
-            // Cria um novo elemnto
+            // Cria um novo elemento
             content += `
-            <div class="result-item">
-                <h2>${result.title}</h2> <p class="descricao-meta">${result.description}</p> <h2>${result.type}</h2> <a href="${result.link}" target="_blank">Itinerary</a> </div>
+                <div class="result-item shadow-transition">
+                    <a href="${result.link}" target="_blank">
+                        <div class="result-flex">
+                            <img class="place-image" src="${imageUrl}" />
+
+                            <div class="description">
+                                <h2>${result.title}</h2> 
+                                <p class="meta-description">${result.description}</p> 
+                                <h4>${result.type}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             `;
         }
         // Cria um novo elemento HTML para cada item do resultado, incluindo título, descrição, tipo e link

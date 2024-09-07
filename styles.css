@@ -5,7 +5,7 @@
 body {
     font-family: "Chakra Petch", sans-serif;
     /* Define a fonte padrão */
-    background-color: #DDDDDD;
+    background-color: #f7f2ee;
     /* Cor de fundo da página */
     display: flex;
     /* Usa Flexbox para layout */
@@ -19,13 +19,14 @@ body {
     /* Remove a margem padrão */
     padding: 0;
     /* Remove o padding padrão */
+    min-height: 100vh;
 }
 
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem;
     /* Tamanho da fonte */
-    color: #222831;
+    color: #1d3b3d;
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
@@ -41,7 +42,7 @@ section {
     /* Alinha os itens na vertical */
     align-items: center;
     /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     /* Espaçamento abaixo de cada seção */
 }
 
@@ -68,7 +69,7 @@ section input {
     /* Borda arredondada */
     margin-bottom: 1rem;
     /* Espaçamento abaixo dos inputs */
-    color: #45474B;
+    color: #1d3b3d;
     /* Cor do texto */
     font-size: 1rem;
     /* Tamanho da fonte */
@@ -76,13 +77,24 @@ section input {
     /* Inclui padding e border na largura total */
 }
 
+img.brand-icon {
+    width: 300px;
+    height: 300px;
+}
+
 .search-input {
     input {
         width: 100%;
+        border: 1px solid transparent;
+
+        &:hover, &:focus-visible, &:focus, &:active {
+            border: 1px solid #f3a63a;
+            outline: none;
+        }
     };
 
     input::placeholder {
-        color: #45474b65;
+        color: #5f73747d;
         
     }
 
@@ -99,17 +111,17 @@ section input {
         border: 0;
         box-shadow: none;
         cursor: pointer;
-        color: #00d800;
+        color: #f8c985;
     }
 
     button:hover {
-        color: #222831;
+        color: #f3a63a;
     }
 }
 
 /* Estiliza o título da seção de lugares */
 .home-places {
-    color: #00d800;
+    margin-bottom: 0;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -124,8 +136,6 @@ section input {
 
 .search-results {
     width: 60rem;
-    height: 46vh;
-    overflow-y: auto;
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -137,47 +147,93 @@ section input {
     /* Cor de fundo dos itens */
     border-radius: 0.6rem;
     /* Borda arredondada */
-    padding: 1rem;
-    /* Espaçamento interno */
     margin-bottom: 1rem;
     /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra leve */
+
+    img {
+        border-radius: 0.6rem 0 0 0.6rem;
+    }
+
+    .result-flex {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .description {
+        padding: 0 1rem;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: #1d3b3d;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        text-decoration: underline;
+    }
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado h2 {
-    font-size: 1.5rem;
-    /* Tamanho da fonte */
-    color: #222831;
-    /* Cor do texto */
-}
-
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
-    text-decoration: none;
-    /* Remove o sublinhado padrão dos links */
-    color: #30475E;
-    /* Cor do texto dos links */
-}
-
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
-    text-decoration: underline;
-    /* Adiciona sublinhado ao passar o mouse */
+.place-image {
+    width: 200px;
+    height: 200px;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: #45474B;
+.meta-description {
+    color: #1d3b3d;
     /* Cor do texto */
     margin: 0.5rem 0;
     /* Margem acima e abaixo */
 }
 
+.example-places {
+    display: flex;
+}
+
+.shadow-transition {
+    transition: box-shadow 0.3s ease-in-out;
+    
+    &:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.place-card {
+    width: 200px;
+    margin: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    background: #fff;
+    
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: #45474B;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    img {
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+
+    .card-body {
+        padding: 0 8px;
+    }
+}
+
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8;
+    background-color: #fffbf7;
     /* Cor de fundo do rodapé */
     color: #45474B;
     /* Cor do texto */
