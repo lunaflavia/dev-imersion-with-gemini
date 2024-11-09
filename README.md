@@ -2,7 +2,7 @@
 
 [https://dev-imersion-with-gemini.vercel.app/](https://dev-imersion-with-gemini.vercel.app/)
 
-## Where pawsome Pets find pawsome places! ##
+## Where awesome Pets find pawsome places! ##
 
 **Woof Woof!** Welcome to Pawesome Place, a web app that helps you find pawsome places to explore with your furry friend. Think of it as your doggy (or kitty, or bunny!) tour guide.
 
@@ -17,7 +17,7 @@ Imagine your pet sniffing out a hidden treat - that's how search works on Paweso
 * **JavaScript:** This is the brain of the app, the part that makes everything work together. It sniffs through the data just like your pup sniffs through the park!
 
 **Wanna help Pawesome Place grow?**
-We're always looking for ways to make Pawesome Place even more awesome!  Feel free to suggest new features, report any bugs you find, or just say hi! We love meeting fellow pet lovers.
+I've always been looking for ways to make Pawesome Place even more awesome!  Feel free to suggest new features, report any bugs, or just say hi! We love meeting fellow pet lovers.
 
 **Additional notes:**
 This is a basic example, and there's always room to add more features!  For example, you could allow users to add their pet-friendly places, or integrate with a mapping service to display results on a map.
