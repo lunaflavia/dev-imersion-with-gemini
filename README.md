@@ -1,7 +1,5 @@
 # Plawsome Place - Dev Imersion with Gemini
 
-[https://dev-imersion-with-gemini.vercel.app/](https://dev-imersion-with-gemini.vercel.app/)
-
 ## Where awesome Pets find pawsome places! ##
 
 **Woof Woof!** Welcome to Pawesome Place, a web app that helps you find pawsome places to explore with your furry friend. Think of it as your doggy (or kitty, or bunny!) tour guide.
